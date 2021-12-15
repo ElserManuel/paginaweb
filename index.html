@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Tienda Max </a>
+
+    <nav class="navbar">
+        <a href="#iniciar">iniciar</a>
+        <a href="#Nosotros">Nosotros</a>
+        <a href="#products">Producto</a>
+        <a href="#categories">Categoria</a>
+        <a href="#Desarr">Desarrolladores</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Buscar...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/sandia.png" alt="">
+            <div class="content">
+                <h3>sandia </h3>
+                <span class="price">S/10.00</span>
+                <span class="quantity">qty : 1</span>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/fresa.jfif" alt="">
+            <div class="content">
+                <h3>fresa</h3>
+                <span class="price">S/8.00</span>
+                <span class="quantity">qty : 2k</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/shampoo.webp" alt="">
+            <div class="content">
+                <h3>shampoo</h3>
+                <span class="price">S/6.00</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : S/ 24.00 </div>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <form action="" class="login-form" id="formlogin">
+        <h3>Iniciar</h3>
+        <input type="email" id = 'emaill' placeholder="Correo" class="box" >
+        <input type="password" id = 'passl' placeholder="Contraseña" class="box">
+        <p>No tienes una cuenta que esperas    <a href="#">¡crear cuenta!</a></p>
+        <button id="btnini" type="submit" value="Iniciar" class="btn">Iniciar</button>
+    </form>
+
+</header>
+
+<section class="iniciar" id="iniciar">
+
+    <div class="content">
+        <h3>Tienda de <span>Abarrote</span></h3>
+        <p>Si de opciones se trata, En Nuestra Tienda encontraras lo que necesitas por su variedad y diversidad. </p>
+        <a href="#" class="btn">Compra Ya!!!</a>
+    </div>
+
+</section>
+
+<section class="Nosotros" id="Nosotros">
+
+    <h1 class="heading"> Nosotros <span>Proveemos</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/descuento.png" alt="">
+            <h3>Descuento</h3>
+            <p>Que no se diga que no consentimos a nuestros valiosos clientes de vez en cuando: A través de este comunicado anunciamos que las rebajas a nuestras tiendas han llegado… Corran. Prometemos que los precios les asombrarán demasiado. Valdrá la pena que vengan rápido.</p>
+        </div>
+
+        <div class="box">
+            <img src="image/venta.png" alt="">
+            <h3>Venta</h3>
+            <p>Los productos que vendemos son de una  muy buena caldiad y lo traemos a muy buen precio al consumidor y de esta manera poder satisfacer al cliente. </p>
+        </div>
+
+        <div class="box">
+            <img src="image/bonus.png" alt="">
+            <h3>Sistema de bonus</h3>
+            <p>Aquellas persona que   hayan comprado de manera   frecuente en nuestra tienda   se les hara llegar un correo  en el cual le daremos un descuento  en los productos que ofrecemos </p>
+        </div>
+
+        <div class="box" id ="regalo">
+            <img src="image/regalo.png" alt="">
+            <h3>Regalos</h3>
+            <p>las personas que ayade comprado de manera contunua en nuestra tienda se les hara llegar un regalo por  la gran confianza que nos llega a tener.</p>
+        </div>
+
+        <div class="box">
+            <img src="image/delivery.jpg" alt="">
+            <h3>Delivery</h3>
+            <p> Si no puedes llegar al Nuestra tienda. Has que nuestro productos de la mejor calidad llegue hasta ti: Llama a un servicio delivery</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="products" id="products">
+
+    <h1 class="heading"><span>Producto</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/naranja.png" alt="">
+                <h3>Naranja</h3>
+                <div class="price"> S/1.50 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/cebolla.png" alt="">
+                <h3>cebolla</h3>
+                <div class="price">S/2.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pepinillo.jpg" alt="">
+                <h3>pepinillo</h3>
+                <div class="price">S/2.50 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/piruleta.jpg" alt="">
+                <h3>Piruleta</h3>
+                <div class="price">S/1.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/carne.png" alt="">
+                <h3>Carne</h3>
+                <div class="price">S/5.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/brocoli.jpg" alt="">
+                <h3>Brocoli</h3>
+                <div class="price">S/3.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/papa.png" alt="">
+                <h3>papa rosada</h3>
+                <div class="price"> S/1.80 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/palta.png" alt="">
+                <h3>Palta</h3>
+                <div class="price">S/2.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/zanahoria.png" alt="">
+                <h3>Zanahoria
+                </h3>
+                <div class="price">S/1.20 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/limon.png" alt="">
+                <h3>limon</h3>
+                <div class="price"> S/1.20 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/tomate.jpg" alt="">
+                <h3>Tomate</h3>
+                <div class="price"> S/1.60 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/incakola.jpg" alt="">
+                <h3>Inca Kola Paquete</h3>
+                <div class="price"> S/15.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/oreo.jpg" alt="">
+                <h3>Oreo Paquete</h3>
+                <div class="price">S/3.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/legia.jpg" alt="">
+                <h3>Legia</h3>
+                <div class="price">S/5.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/ace.jpg" alt="">
+                <h3>ace x 480G</h3>
+                <div class="price"> S/6.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/escoba.jpg" alt="">
+                <h3>Escoba</h3>
+                <div class="price"> S/8.00 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn verificacion">Comprar</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> <span>categoria</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/vegetales.jpg" alt="">
+            <h3>vegetales</h3>
+            <p>descuento 10%</p>
+        </div>
+
+        <div class="box">
+            <img src="image/frutas.jpg" alt="">
+            <h3>Frustas</h3>
+            <p>descuento 12%</p>
+
+        </div>
+
+        <div class="box">
+            <img src="image/dulce.jpg" alt="">
+            <h3>Dulces</h3>
+            <p>descuento 10%</p>
+        </div>
+
+        <div class="box">
+            <img src="image/limpieza.jpg" alt="">
+            <h3>Limpieza</h3>
+            <p>descuento 15%</p>
+
+        </div>
+        
+        <div class="box" id ="carne">
+            <img src="image/carne.jpg" alt="">
+            <h3>Carne</h3>
+            <p>descuento 5%</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="Desarr" id="Desarr">
+    <h1 class="heading"><span>Desarrolladores</span> </h1>
+</h1>
+<div class="container__cards">
+    <div class="card">
+        <div class="cover">
+            <img src="image/Anderson.png" alt="">
+            <div class="img__back"></div>
+        </div>
+        <div class="description">
+            <h2>Anderson Cabello</h2>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="cover">
+            <img src="image/Manuel.png" alt="">
+            <div class="img__back"></div>
+        </div>
+        <div class="description">
+            <h2>Elser Manuel</h2>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="cover">
+            <img src="image/Adolfo.png" alt="">
+            <div class="img__back"></div>
+        </div>
+        <div class="description">
+            <h2>Adolfo Berrocal</h2>
+
+        </div>
+    </div>
+    <div class="card">
+      <div class="cover">
+          <img src="image/franco.png" alt="">
+          <div class="img__back"></div>
+      </div>
+      <div class="description">
+          <h2>Eduardo Azaldegui</h2>
+      </div>
+  </div>
+</section>
+
+<section class="login" id="login">
+    <h1 class="heading">  <span>Login</span> </h1>
+    <form id="form" class="formulario">
+    
+        <h1 id = "registrate" >Registrate</h1>
+         <div class="contenedor">
+         
+         <div class="input-contenedor">
+             <i class="fas fa-user icon"></i>
+             <input id = 'usename' type="text" placeholder="Nombre Completo">
+             
+             </div>
+
+             <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input id = 'useape' type="text" placeholder="Apellido Completo">
+                </div>
+
+            <div class="input-contenedor">
+                <i class="fas fa-phone-alt icon"></i>
+                <input id ='usecelu' type="text" placeholder="Celular" maxlength="9">
+            </div>
+
+             <div class="input-contenedor">
+             <i class="fas fa-envelope icon"></i>
+             <input id = 'emause' type="text" placeholder="Correo Electronico">
+             
+             </div>
+
+             <div class="input-contenedor">
+                <i class="fas fa-id-card icon"></i>
+                <input id = 'usedni' type="text" placeholder="DNI">
+            </div>
+            
+            <div class="input-contenedor">
+                <i class="fas fa-map-marked-alt icon"></i>
+                <input id ='usedir' type="text" placeholder="Direccion">
+            </div>
+             
+             
+             <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+             <input id = 'pasuse' type="password" placeholder="Contraseña">
+             
+             </div>
+             <button id="btnCrear" type="submit" class="btn btn-secondary">
+               Crear Cuenta
+            </button>
+             <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+             <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
+         </div>
+</section>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3> Tienda max <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Somos un fiel departamento de compras externo para empresas que no quieran desarrollar esa área, resolviendo su necesidad de adquisición de mercancías, garantizando precios honestos y competitivos. Operamos bajo un modelo de B2B en mayoreo y B2C a través de nuestro carrito de compra, exclusivamente. Trabajamos con el mercado peruano y tenemos relaciones comerciales de productos de importación y exportación.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Para mas informacion</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> 963 456 999 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> tiendamax_tutienda@glamin.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Los Girasoles #### #### </a>
+        </div>
+
+
+    </div>
+
+    <div class="credit"> Todos los derechos reservados </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/estilo.js"></script>
+<script type="commonjs" src="js/connect.js"></script>
+<script type="commonjs" src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
