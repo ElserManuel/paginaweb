@@ -59,12 +59,6 @@ Desarrollado como un proyecto personal para demostrar habilidades en desarrollo 
 
 ## 🔍 Funcionalidades Detalladas
 
-### Sistema de Carrito
-- Añadir/eliminar productos del carrito
-- Visualización del total de compra
-- Acceso rápido desde cualquier página
-- Confirmación de compra
-
 ### Sistema de Navegación
 - Menú principal con acceso a todas las secciones
 - Barra de búsqueda integrada
@@ -110,7 +104,7 @@ Desarrollado como un proyecto personal para demostrar habilidades en desarrollo 
 
 2. **Instalar dependencias**
    ```bash
-   cd tienda-max
+   cd paginaweb
    npm install
    ```
 
